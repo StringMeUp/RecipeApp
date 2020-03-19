@@ -75,10 +75,11 @@ public class IngredientsFragment extends Fragment {
             linesAdapter = new IngredientsAdapter(linesList);
             linesRecyclerView.setLayoutManager(linesManager);
             linesRecyclerView.setAdapter(linesAdapter);
-            //onClick Heart ImageView (calls Shared Prefs, checks whether it is empty;
-            //if empty creates an ArrayList, adds items, creates a HashSet that takes in that list,
-            //since a Set is not able to do so
-            //else, the same ArrayList will take in the HashSet, add the new items and addAll to HashSet)
+            //onClick Heart ImageView (calls Shared Prefs, checks whether it is empty
+            //if empty creates an ArrayList, the necessary item is added to it
+            //further wrapping it up into a HashSet
+            //if not empty same process is repeated and the HashSet is updated (addALL)
+            //and passed/put into shared
             heartImage.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

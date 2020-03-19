@@ -47,7 +47,6 @@ public class ExploreSupportAdapter extends RecyclerView.Adapter<ExploreSupportAd
         holder.foodText.setText(item.getTitle());
         Glide.with(holder.foodImage)
                 .load(baseUri)
-               // .override(400, 300)
                 .into(holder.foodImage);
     }
 
