@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">RecipeApp</string>
+    <string name="text_view">This is the Title of the Recipe</string>
+    <string name="get_button">Get Recipe</string>
+    <string name="search_hint">Search Here…</string>
+    <string name="textView_txt">Choose caloric value:</string>
+    <string name="textVew_title">Meal Title</string>
+    <string name="ingredients_vector">Ingredients</string>
+    <string name="explore_vector">Explore More</string>
+    <string name="favorites_vector">Favorites</string>
+    <string name="ingredients_layout">Ingredients</string>
+    <string name="explore_layout">Explore More</string>
+    <string name="favorites_layout">My Favorites</string>
+    <string name="ingredient_lines_cardView_txt">Ingredient Lines</string>
+    <string name="nutritionalValue_txt">Nutritional Value:</string>
+    <string name="value_one_txt">Value One</string>
+    <string name="value_two_txt">Value Two</string>
+    <string name="value_three_txt">Value Three</string>
+    <string name="value_four_txt">Value Four</string>
+    <string name="favorites_textView">Ingredient Lines</string>
+    <string name="favorites_imageView">Favorites Image</string>
+    <string name="title_of_interest">This is the title of interest</string>
+    <string name="cuisine_of_choice">Cuisine</string>
+    <string name="food_title">Food title</string>
+
+
+    <string-array name="calories">
+        <item><![CDATA[Select caloric value]]></item>
+        <item><![CDATA[default]]></item>
+        <item><![CDATA[50–100]]></item>
+        <item><![CDATA[100–200]]></item>
+        <item><![CDATA[200–300]]></item>
+        <item><![CDATA[300–400]]></item>
+        <item><![CDATA[400–500]]></item>
+        <item><![CDATA[500–600]]></item>
+        <item><![CDATA[600–700]]></item>
+        <item><![CDATA[700–800]]></item>
+    </string-array>
+
+</resources>

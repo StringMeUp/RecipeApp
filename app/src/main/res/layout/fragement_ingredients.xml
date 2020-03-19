@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ingredients">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/meal_imageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="3dp"
+            android:padding="2dp"
+            app:civ_border_color="@color/whiteColor"
+            app:civ_border_width="3dp" />
+
+        <ImageView
+            android:id="@+id/heart_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignEnd="@+id/meal_imageView"
+            android:layout_alignBottom="@+id/meal_imageView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="89dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="-2dp"
+            android:layout_marginBottom="-3dp"
+            android:background="@drawable/heart_image" />
+
+        <TextView
+            android:id="@+id/meal_txt"
+            android:layout_width="376dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/meal_imageView"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="@string/ingredients_layout"
+            android:textColor="@color/whiteColor"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ingredient_lines_recycler"
+        android:layout_width="350dp"
+        android:layout_height="166dp"
+        android:layout_marginTop="10dp"
+        android:padding="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        tools:listitem="@layout/ingredients_recycler" />
+
+    <TextView
+        android:id="@+id/nutritionalValue_txt"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="@string/nutritionalValue_txt"
+        android:textColor="@color/whiteColor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ingredient_lines_recycler"
+        app:layout_goneMarginTop="20sp" />
+
+    <HorizontalScrollView
+        android:id="@+id/values_scrollView"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nutritionalValue_txt"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp">
+
+                <ImageView
+                    android:id="@+id/valueOne_imageView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/lens_background" />
+
+                <TextView
+                    android:id="@+id/value_one_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/valueOne_imageView"
+                    android:layout_alignTop="@id/valueOne_imageView"
+                    android:layout_alignEnd="@id/valueOne_imageView"
+                    android:layout_alignBottom="@id/valueOne_imageView"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/value_one_txt"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp">
+
+                <ImageView
+                    android:id="@+id/valueTwo_imageView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/lens_background_green" />
+
+                <TextView
+                    android:id="@+id/value_two_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/valueTwo_imageView"
+                    android:layout_alignTop="@id/valueTwo_imageView"
+                    android:layout_alignEnd="@id/valueTwo_imageView"
+                    android:layout_alignBottom="@id/valueTwo_imageView"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/value_two_txt"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp">
+
+                <ImageView
+                    android:id="@+id/valueThree_imageView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/lens_background_black" />
+
+                <TextView
+                    android:id="@+id/value_three_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/valueThree_imageView"
+                    android:layout_alignTop="@id/valueThree_imageView"
+                    android:layout_alignEnd="@id/valueThree_imageView"
+                    android:layout_alignBottom="@id/valueThree_imageView"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/value_three_txt"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp">
+
+                <ImageView
+                    android:id="@+id/valueFour_imageView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/lens_background_white" />
+
+                <TextView
+                    android:id="@+id/value_four_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/valueFour_imageView"
+                    android:layout_alignTop="@id/valueFour_imageView"
+                    android:layout_alignEnd="@id/valueFour_imageView"
+                    android:layout_alignBottom="@id/valueFour_imageView"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/value_four_txt"
+                    android:textColor="@color/blackColor"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

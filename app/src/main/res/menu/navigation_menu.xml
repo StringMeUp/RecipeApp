@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_ingredients"
+        android:icon="@drawable/nav_list_ingredients"
+        android:title="@string/ingredients_vector" />
+    <item
+        android:id="@+id/nav_favorites"
+        android:icon="@drawable/nav_favorites"
+        android:title="@string/favorites_vector" />
+
+    <item
+        android:id="@+id/nav_explore"
+        android:icon="@drawable/nav_explore_further"
+        android:title="@string/explore_vector" />
+</menu>
