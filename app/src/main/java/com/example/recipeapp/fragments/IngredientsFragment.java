@@ -83,7 +83,7 @@ public class IngredientsFragment extends Fragment {
             heartImage.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    //change background (heart-image) onClick
+                    //change background (heart-image) onClick listener
                     heartImage.setImageResource(R.drawable.heart_image_red);
                     Runnable run = new Runnable() {
                         @Override
