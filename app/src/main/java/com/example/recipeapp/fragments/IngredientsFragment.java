@@ -75,7 +75,7 @@ public class IngredientsFragment extends Fragment {
             linesAdapter = new IngredientsAdapter(linesList);
             linesRecyclerView.setLayoutManager(linesManager);
             linesRecyclerView.setAdapter(linesAdapter);
-            //onClick Heart ImageView checks whether SharedPrefs is empty
+            //Updated comment: onClick Heart ImageView checks whether SharedPrefs is empty
             //if empty creates an ArrayList, the necessary item is added to it
             //further wrapping it up into a HashSet
             //if not empty same process is repeated and the HashSet is updated (addALL)
