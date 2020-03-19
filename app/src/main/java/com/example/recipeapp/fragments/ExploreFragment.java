@@ -11,11 +11,11 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.recipeapp.R;
-import com.example.recipeapp.helperClass.Background;
-import com.example.recipeapp.mainAndAdpters.ExploreAdapter;
-import com.example.recipeapp.mainAndAdpters.ExploreSupportActivity;
-import com.example.recipeapp.modelSpoonacular.RandomCuisineItems;
-import com.example.recipeapp.modelSpoonacular.ResultsItem;
+import com.example.recipeapp.helperclass.Background;
+import com.example.recipeapp.mainandadapters.ExploreAdapter;
+import com.example.recipeapp.mainandadapters.ExploreSupportActivity;
+import com.example.recipeapp.modelspoonacular.RandomCuisineItems;
+import com.example.recipeapp.modelspoonacular.ResultsItem;
 import com.example.recipeapp.network.JsonRecipeInterface;
 
 import java.util.ArrayList;

@@ -1,7 +1,7 @@
 package com.example.recipeapp.network;
 
-import com.example.recipeapp.modelEdamam.RecipeResultsTotal;
-import com.example.recipeapp.modelSpoonacular.RandomCuisineItems;
+import com.example.recipeapp.modeledamam.RecipeResultsTotal;
+import com.example.recipeapp.modelspoonacular.RandomCuisineItems;
 
 import retrofit2.Call;
 import retrofit2.Retrofit;

@@ -20,12 +20,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.recipeapp.R;
-import com.example.recipeapp.mainAndAdpters.IngredientsAdapter;
-import com.example.recipeapp.modelEdamam.CHOLE;
-import com.example.recipeapp.modelEdamam.ENERCKCAL;
-import com.example.recipeapp.modelEdamam.FAT;
-import com.example.recipeapp.modelEdamam.HitsItem;
-import com.example.recipeapp.modelEdamam.SUGAR;
+import com.example.recipeapp.mainandadapters.IngredientsAdapter;
+import com.example.recipeapp.modeledamam.CHOLE;
+import com.example.recipeapp.modeledamam.ENERCKCAL;
+import com.example.recipeapp.modeledamam.FAT;
+import com.example.recipeapp.modeledamam.HitsItem;
+import com.example.recipeapp.modeledamam.SUGAR;
 
 import java.util.ArrayList;
 import java.util.HashSet;

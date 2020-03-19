@@ -15,7 +15,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.recipeapp.R;
-import com.example.recipeapp.mainAndAdpters.FavoritesAdapter;
+import com.example.recipeapp.mainandadapters.FavoritesAdapter;
 
 import java.util.ArrayList;
 import java.util.HashSet;
